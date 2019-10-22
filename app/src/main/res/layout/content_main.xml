@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:elevation="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi, Paul"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="16dp" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+<RelativeLayout
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_below="@+id/app_bar"
+    android:layout_marginBottom="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/onebill"
+        android:text="OneBill"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/bill_Id"
+        android:layout_below="@+id/onebill"
+        android:text="3456879"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_alignParentEnd="true"
+        android:text="$ 10.00"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/price"
+        android:text="Due By Oct 13 2019"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <Button
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/bill_Id"
+        android:layout_marginTop="16dp"
+        android:id="@+id/payNow"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="PAY NOW"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        android:background="@drawable/filled"
+        android:textSize="13sp" />
+
+
+    <Button
+        android:layout_below="@+id/bill_Id"
+        android:layout_marginTop="16dp"
+        android:id="@+id/viewBill"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="VIEW BILL"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/tab_color"
+        android:padding="8dp"
+        android:background="@drawable/bulk_req_button"
+        android:textSize="13sp" />
+
+
+    <View
+        android:id="@+id/view_start"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/viewBill"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:background="#D8D6D6"/>
+
+<TextView
+    android:id="@+id/tv"
+    android:layout_below="@+id/view_start"
+    android:text="Set-up pre-authorized payments"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:background="@drawable/ic_right_chevron"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/view_start"
+        android:layout_width="15dp"
+        android:layout_height="15dp" />
+
+
+    <View
+        android:id="@+id/view_end"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:background="#D8D6D6"/>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_below="@+id/view_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        android:nestedScrollingEnabled="true">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
+
+
+
+
+
+    <!--<include layout="@layout/horizontal_scroll_view" />-->
+
+
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hello World!"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+</RelativeLayout>
+

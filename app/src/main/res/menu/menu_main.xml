@@ -1,0 +1,85 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.event.assignment.MainActivity">
+    <!--<item-->
+        <!--android:id="@+id/action_settings"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="@string/action_settings"-->
+        <!--app:showAsAction="never" />-->
+
+
+
+
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_user"
+        android:title=""
+        app:showAsAction="always">
+
+
+<menu>
+
+
+    <item
+        android:id="@+id/action_my_profile"
+        android:icon="@drawable/ic_userblack"
+        android:title="My Profile"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/action_storeLocator"
+        android:icon="@drawable/ic_baseline_place"
+        android:title="Store Locator"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_book_appointment"
+        android:icon="@drawable/ic_calendar_day"
+        android:title="Book appointment"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_privacy"
+        android:icon="@drawable/ic_baseline_lock"
+        android:title="Setting and Privacy"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/ic_logout_new"
+        android:title="Logout"
+        app:showAsAction="ifRoom" />
+
+
+</menu>
+
+
+
+
+
+
+
+
+    </item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</menu>
